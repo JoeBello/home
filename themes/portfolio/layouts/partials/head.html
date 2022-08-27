@@ -1,0 +1,19 @@
+<head>
+	<title>{{ .Site.Params.title }}</title>
+
+	<meta charset="{{ .Site.Params.charset }}">
+	<meta name="author" content="{{ .Site.Params.author }}">
+	<meta name="description" content="{{ .Site.Params.description }}" />
+	<meta name="keywords" content="{{ .Site.Params.keywords }}" />
+	<meta name="viewport" content="{{ .Site.Params.viewport }}">
+
+	{{ if .Site.IsServer }}
+	{{ $style := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/style.css"
+	"enableSourceMap" true)}}
+	<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+	{{ else }}
+	{{ $style := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/style.css"
+	"enableSourceMap" false)}}
+	<link rel="stylesheet" href="{{ ($style).RelPermalink }}">
+	{{ end }}
+</head>
