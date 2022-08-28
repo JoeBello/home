@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Params.language }}">
+
 {{ partial "head.html" . }}
 
 <body>
 	{{ partial "header.html" . }}
 	<div id="content">
-		<h1>Something New?</h1>
-		<h2>{{.Site.IsServer}}</h2>
-		{{ block "main" . }}{{ end }}
+		{{ block "main" . }}
+		{{ end }}
 	</div>
-	{{ partial "footer.html" . }}
 </body>
 
 </html>
