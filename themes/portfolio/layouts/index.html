@@ -1,5 +1,20 @@
-{{ define "main" }}
-{{ if .Content }}
-{{ .Content }}
-{{ end }}
-{{ end }}
+<!DOCTYPE html>
+<html lang="{{ .Site.Params.language }}">
+
+{{ partial "head.html" . }}
+
+<body>
+	{{ partial "header.html" . }}
+
+	{{ with .Site.GetPage "/home" }}
+	<h1>
+		{{ .Title }}
+		<br>
+		{{ .Content }}
+	</h1>
+	{{ end }}
+
+	{{ partial "home/social-nav.html"}}
+</body>
+
+</html>
