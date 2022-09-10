@@ -5,8 +5,43 @@ theme = "portfolio"
 [params]
 author = "Joe Bello"
 charset = "utf-8"
-description = "The portfolio website of Joe Bello, Software Engineer."
+description = "The personal website of Joe Bello, Software Engineer."
 keywords = "Joe Bello, Software Engineer, Software Developer, Web Developer, Web Engineer"
 language = "en"
-title = "Joe Bello | Software Engineer"
+title = "Joe Bello, Software Engineer"
 viewport = "width=device-width, initial-scale=1.0"
+
+[[menu.main]]
+	identifier = "home"
+	name = "Home"
+	url = "/"
+
+[[menu.main]]
+	identifier = "about"
+	name = "About"
+	url = "/about"
+
+[[menu.main]]
+	identifier = "projects"
+	name = "Projects"
+	url = "/projects"
+
+[[menu.main]]
+	identifier = "resume"
+	name = "Resume"
+	url = "/resume"
+
+[[menu.social]]
+	identifier = "github"
+	name = "GitHub"
+	url = "/github"
+
+[[menu.social]]
+	identifier = "linkedin"
+	name = "LinkedIn"
+	url = "/linkedin"
+
+[[menu.social]]
+	identifier = "home"
+	name = "Twitter"
+	url = "/twitter"
