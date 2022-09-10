@@ -4,8 +4,10 @@
  -->
 <nav>
 	<ul>
-		<li>GitHub</li>
-		<li>LinkedIn</li>
-		<li>Twitter</li>
+		{{ range .Site.Menus.social}}
+		<li>
+			{{ .Name }}
+		</li>
+		{{ end }}
 	</ul>
 </nav>
