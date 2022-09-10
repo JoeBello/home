@@ -1,14 +1,25 @@
+<div class="header">
+	{{ range where .Site.Menus.main "Identifier" "==" "home" }}
+	<a class="logo" href="{{.URL}}">
+		{{ if templates.Exists "partials/logo.html"}}
+		{{ partial "logo.html" }}
+		{{ else }}
+		{{ .Name }}
+		{{ end }}
+	</a>
+	{{ end }}
+	<nav class="header-nav">
+		<ul>
+			{{ range where .Site.Menus.main "Identifier" "!=" "home" }}
+			<li>
+				<a href="{{.URL}}">{{ .Name }}</a>
+			</li>
+			{{ end }}
+		</ul>
+	</nav>
+</div>
+
 <!--
 	TODO
-		icon/branding
-		remove current location
-		only display links for content that exists
+		remove/style current location
 -->
-<nav>
-	<ul>
-		<li>Home</li>
-		<li>About</li>
-		<li>Projects</li>
-		<li>Resume</li>
-	</ul>
-</nav>
