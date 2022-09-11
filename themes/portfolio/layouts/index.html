@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Params.language }}">
-
 {{ partial "head.html" . }}
 
 <body>
 	{{ partial "header.html" . }}
-
-	{{ with .Site.GetPage "/home" }}
-	<h1>
-		{{ .Title }}
-		<br>
-		{{ .Content }}
-	</h1>
-	{{ end }}
-
-	{{ partial "home/social-nav.html" . }}
+	<main>
+		{{ with .Site.GetPage "/home" }}
+		<h1>
+			{{ .Title }}
+			<br>
+			{{ .Content }}
+		</h1>
+		{{ end }}
+		{{ partial "home/social-nav.html" . }}
+	</main>
 </body>
 
 </html>
