@@ -1,6 +1,10 @@
 .header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin: $spacing-sm;
+	box-shadow: 0 -10px 25px $shadow-blue;
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: $spacing-md;
+	}
 }
