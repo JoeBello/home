@@ -4,15 +4,5 @@ a {
 
 	&:hover {
 		cursor: pointer;
-		text-decoration: underline;
-		text-decoration-color: $blue;
-		text-decoration-thickness: 2px;
-	}
-
-	&:active {
-		color: inherit;
-		text-decoration: underline;
-		text-decoration-color: $purple;
-		text-decoration-thickness: 2px;
 	}
 }
