@@ -1,5 +1,13 @@
+$header-height: 3rem;
+
 .header {
 	box-shadow: 0 -10px 25px $shadow-blue;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: $header-height;
+	background-color: $white;
 
 	nav {
 		display: flex;
