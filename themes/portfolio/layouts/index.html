@@ -4,15 +4,11 @@
 
 <body>
 	{{ partial "header.html" . }}
-	<main>
-		{{ with .Site.GetPage "/home" }}
-		<h1>
-			{{ .Title }}
-			<br>
-			{{ .Content }}
-		</h1>
-		{{ end }}
-		{{ partial "home/social-nav.html" . }}
+	<main class="main">
+		<div class="main-content">
+			{{ partial "home/intro.html" . }}
+			{{ partial "home/social-nav.html" . }}
+		</div>
 	</main>
 </body>
 
