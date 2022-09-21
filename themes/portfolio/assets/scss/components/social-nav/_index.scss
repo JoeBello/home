@@ -1,0 +1,24 @@
+.social-nav {
+	display: block;
+	width: 100%;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+	li {
+		margin: 0;
+		padding: 0;
+		display: inline;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+}
