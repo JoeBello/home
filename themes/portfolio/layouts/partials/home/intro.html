@@ -1,0 +1,9 @@
+<div class="intro">
+	{{ with .Site.GetPage "/home" }}
+	<h1>
+		{{ .Title }}
+		<br>
+		{{ .Content }}
+	</h1>
+	{{ end }}
+</div>
