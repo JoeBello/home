@@ -8,11 +8,4 @@ $header-height: 3rem;
 	right: 0;
 	height: $header-height;
 	background-color: $white;
-
-	nav {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding: $spacing-md;
-	}
 }
