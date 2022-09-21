@@ -1,4 +1,9 @@
 .header-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: $spacing-md $spacing-lg;
+
 	&-routes {
 		align-items: center;
 		display: flex;
@@ -12,6 +17,10 @@
 			margin: $spacing-xs $spacing-md;
 			text-decoration: none;
 			transition: border-bottom ease-in $fast;
+
+			&:last-child {
+				margin-right: 0;
+			}
 
 			&:hover {
 				border-color: $shadow-purple;
@@ -30,6 +39,10 @@
 			display: inline;
 			margin: 0 $spacing-sm;
 			padding: 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 
 		ul {
